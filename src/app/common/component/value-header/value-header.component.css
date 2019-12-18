@@ -1,0 +1,15 @@
+.value {
+    font-weight: bold;
+    font-size: 6vmin;
+    
+}
+
+.header {
+    font-weight: normal;
+    font-size: 4vmin;
+}
+
+.bottomBorder {
+    border-style: solid;
+    border-width: 0vmin 0vmin 0.1vmin 0.5vmin;
+}

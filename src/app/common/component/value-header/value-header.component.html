@@ -1,0 +1,12 @@
+<div class = "container">
+    <div *ngFor="let row of data; let i = index">
+        <div class="row" *ngIf = "((i % columns) == 0)">
+            <div *ngFor = "let x of helperArray; let j = index" [ngClass] = 'cellClass'>
+                <div class="p-1 mb-2 bottomBorder" *ngIf="data[i+j];">
+                    <div class="value">{{data[i+j][1]}}</div>
+                    <div class="header">{{data[i+j][0]}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
