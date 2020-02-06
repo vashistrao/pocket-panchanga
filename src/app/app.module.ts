@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { PanchanagaModule } from './panchanga/panchanaga.module';
 import { AppComponent } from './app.component';
+import { SimpleAnimationModule } from 'angular-simple-animation';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PanchanagaModule
+    PanchanagaModule,
+    SimpleAnimationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

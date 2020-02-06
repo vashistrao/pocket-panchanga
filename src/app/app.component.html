@@ -1,3 +1,10 @@
-<div> </div>
-<panchanga-day></panchanga-day>
-<router-outlet></router-outlet>
+<div class="TitleBar p-1" >
+    <div class="appTitle"><sa-fade-in-out [visible]='displayTitle'>{{title}}</sa-fade-in-out></div>
+    <div class="appSubTitle"><sa-fade-in-out [visible]='displaySubTitle'>{{subTitle}}</sa-fade-in-out></div>
+</div>
+<div class="appContent p-1">
+    <router-outlet></router-outlet>
+    <a routerLink="/home">Home</a>
+    <br/>
+    <a routerLink="/day">Day</a>
+</div>
