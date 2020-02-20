@@ -1,0 +1,9 @@
+<div class="outerLayout">
+    <div class="mainBanner">
+        <div class="mainBannerBiggerFont">{{today.date | date: 'd'}} {{today.date | date: 'MMM'}} {{today.date | date: 'yyyy'}}</div>
+        <div><span class="mainBannerFont">{{today.paksha | translator: 'Paksha': 'eng'}}{{' '}}</span>{{'Paksha' | textTranslator: 'eng'}}<span></span></div>
+        <div><span class="mainBannerFont" *ngFor="let thithi of today.thithi">{{thithi | translator: 'Thithi': 'eng' }}{{' '}}</span><span>{{'Thithi' | textTranslator: 'eng'}}</span></div>
+        <div><span class="mainBannerFont">{{today.vaasara | translator: 'Vaasara': 'eng' }}{{' '}}</span><span>{{'Vaasara' | textTranslator: 'eng'}}</span></div>
+        <div><span class="mainBannerFont">{{today.nakshathra | translator: 'Nakshathra': 'eng' }}{{' '}}</span><span>{{'Nakshathra' | textTranslator: 'eng'}}</span></div>
+    </div>
+</div>

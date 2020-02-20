@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DayComponent } from './panchanga/day/day.component';
-import { HomeComponent } from './common/component/home/home.component';
+import { HomeComponent } from './panchanga/home/home.component';
 
 
 const routes: Routes = [
