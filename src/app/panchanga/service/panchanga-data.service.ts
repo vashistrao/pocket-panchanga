@@ -20,4 +20,8 @@ export class PanchangaDataService {
 
     return datesToReturn;
   }
+
+  getPanchangaOfDay(date: Date): Day {
+    return Panchanga2020.Dates.find(x=> x.date.toLocaleDateString() == date.toLocaleDateString());
+  }
 }

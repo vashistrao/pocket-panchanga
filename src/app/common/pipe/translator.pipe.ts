@@ -11,7 +11,7 @@ export class TranslatorPipe implements PipeTransform {
   }
 
   transform(id: string, type: string, language: string): string {
-    return this._translator.Translate(type, language, id);
+    return this._translator.Translate(id, type, language);
   }
 
 }

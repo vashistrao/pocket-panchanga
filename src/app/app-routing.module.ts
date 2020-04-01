@@ -5,10 +5,11 @@ import { HomeComponent } from './panchanga/home/home.component';
 
 
 const routes: Routes = [
-  { path: 'day', component: DayComponent },
+  { path: 'day', redirectTo: 'day/', pathMatch: 'full' },
+  { path: 'day/:date', component: DayComponent },
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: 'day', pathMatch: 'full'},
-  { path: '**', redirectTo: 'day', pathMatch: 'full'}
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({

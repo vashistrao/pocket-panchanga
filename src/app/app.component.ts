@@ -36,6 +36,9 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if(this.titleSubscription != null)
       this.titleSubscription.unsubscribe();
+
+    if(this.subTitleSubscription != null)
+      this.subTitleSubscription.unsubscribe();
   }
 
   setNewTitle(title: any): void {

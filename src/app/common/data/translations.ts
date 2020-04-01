@@ -127,7 +127,7 @@ export class Translations {
         { Type: 'Nakshathra', Language: 'eng', Id: '18', Value: 'Jyestha' },
         { Type: 'Nakshathra', Language: 'eng', Id: '19', Value: 'Mula' },
         { Type: 'Nakshathra', Language: 'eng', Id: '20', Value: 'Purva Asadha' },
-        { Type: 'Nakshathra', Language: 'eng', Id: '21', Value: 'Uttara Asaḍha' },
+        { Type: 'Nakshathra', Language: 'eng', Id: '21', Value: 'Uttara Asadha' },
         { Type: 'Nakshathra', Language: 'eng', Id: '22', Value: 'Sravana' },
         { Type: 'Nakshathra', Language: 'eng', Id: '23', Value: 'Dhanistha' },
         { Type: 'Nakshathra', Language: 'eng', Id: '24', Value: 'Satabhisa' },
@@ -182,6 +182,7 @@ export class Translations {
         { Type: 'Text', Language: 'eng', Id: 'Nakshathra', Value: 'Nakshathra' },
         { Type: 'Text', Language: 'eng', Id: 'Yoga', Value: 'Yoga' },
         { Type: 'Text', Language: 'eng', Id: 'Karana', Value: 'Karana' },
-        { Type: 'Text', Language: 'eng', Id: 'ShraddhaThithi', Value: 'Shraddha Thithi' }
+        { Type: 'Text', Language: 'eng', Id: 'ShraddhaThithi', Value: 'Shraddha Thithi' },
+        { Type: 'Text', Language: 'eng', Id: 'ComingDays', Value: 'Coming days' }
     ]
 }
