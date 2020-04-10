@@ -1,29 +1,9 @@
-.mainBanner {
-    padding: 2vw;
-    color: white; 
-    margin-left: 2vw;
-    margin-right: 2vw;
-    border-radius: 2vw;
-    background:  #484848;
-    font-size: 3vmin;
-  }
-
-  .mainBannerBiggerFont {
-    font-size: 7vmin;
-    font-weight: bold;
-  }
-
-  .mainBannerFont {
-    font-size: 5vmin;
-    font-weight: bold;
-  }
-
   .outerLayout {
-    width: 100vmin;
+    width: 95vw;
     margin: 0 auto;
   }
 
-  .comingDayBanner {
+  .listBanner {
     padding: 1vw;
     color: #484848; 
     margin-left: 2vw;
@@ -34,7 +14,7 @@
     font-weight: bold;
   }
 
-  .comingDay {
+  .listItem {
     border-radius: 2vw;
     padding: 1vw;
     background:  #484848;
@@ -44,26 +24,15 @@
     min-width: 35vmin;
   }
 
-  .comingDayHeader {
+  .listHeader {
     border-style: none none solid none;
     border-color: #484848;
   }
 
-  .comingDayList {
+  .list {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     margin-top: 2vw;
+    padding-bottom: 2vmin;
   }
-  
-  /*@media (orientation: portrait) {
-    .mainBanner {
-        height: 40vh;
-    }
-  }
-  
-  @media (orientation: landscape) {
-    .mainBanner {
-        height: 50vh;
-    }
-  }*/

@@ -2,3 +2,21 @@
 * {
     font-family: cursive;
 }
+
+/* width and height */
+::-webkit-scrollbar {
+    width: 1.5vmin;
+    height: 1.5vmin;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 0.5vmin solid transparent;
+    background-clip: content-box;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}

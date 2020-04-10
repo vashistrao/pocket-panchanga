@@ -1,0 +1,18 @@
+<section class="daySummaryBanner" (click)="bannerClicked(day.date)">
+    <div class="daySummaryHeader">{{day.date | date: 'd'}}{{' '}}{{day.date | date: 'MMM'}} {{day.date | date: 'yyyy'}}</div>
+    <br />
+    <div class="daySummaryList" >
+        <div class="daySummaryItem">
+            <div><span class="daySummaryNormalFont">{{day.paksha | translator: 'Paksha' }}{{' '}}</span><span>{{'Paksha' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont" *ngFor="let thithi of day.thithi">{{thithi | translator: 'Thithi' }}{{' '}}</span><span>{{'Thithi' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont">{{day.vaasara | translator: 'Vaasara' }}{{' '}}</span><span>{{'Vaasara' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont">{{day.nakshathra | translator: 'Nakshathra' }}{{' '}}</span><span>{{'Nakshathra' | translator }}</span></div>
+        </div>
+        <div class="daySummaryItem">
+            <div><span class="daySummaryNormalFont">{{day.samvathsara | translator: 'Samvathsara' }}{{' '}}</span><span>{{'Samvathsara' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont">{{day.ayana | translator: 'Ayana' }}{{' '}}</span><span>{{'Ayana' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont">{{day.rutu | translator: 'Rutu' }}{{' '}}</span><span>{{'Rutu' | translator }}</span></div>
+            <div><span class="daySummaryNormalFont">{{day.maasa | translator: 'Maasa' }}{{' '}}</span><span>{{'Maasa' | translator }}</span></div>
+        </div>
+    </div>
+</section>

@@ -4,11 +4,13 @@ import { PanchangaCommonModule } from '../common/panchanga-common.module';
 import { DayComponent } from './day/day.component';
 import { SimpleAnimationModule } from 'angular-simple-animation';
 import { HomeComponent } from './home/home.component';
+import { DaySummaryComponent } from './day-summary/day-summary.component';
 
 @NgModule({
   declarations: [
     DayComponent,
-    HomeComponent
+    HomeComponent,
+    DaySummaryComponent
   ],
   imports: [
     CommonModule,

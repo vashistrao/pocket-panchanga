@@ -1,0 +1,38 @@
+.daySummaryBanner {
+    padding: 2vw;
+    color: white; 
+    margin-left: 2vw;
+    margin-right: 2vw;
+    border-radius: 2vw;
+    background:  #484848;
+    font-size: 3vmin;
+}
+
+.daySummaryHeader {
+    font-size: 7vmin;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 0vmin 0vmin 0.5vmin 0vmin;
+    border-color: white;
+}
+
+.daySummaryItem {
+    border-style: solid;
+    border-width: 0vmin 0vmin 0vmin 0.1vmin;
+    border-color: white;
+    min-width: 60vmin;
+    padding: 2vmin;
+}
+
+.daySummaryList {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 2vmin;
+    margin: 1vmin;
+}
+
+.daySummaryNormalFont {
+    font-size: 5vmin;
+    font-weight: bold;
+}

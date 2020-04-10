@@ -1,0 +1,12 @@
+<div class="carouselHeader" *ngIf="header"><ng-container [ngTemplateOutlet]=header.template></ng-container></div>
+<section class="carouselWrapper">
+    <ul class="carouselList">
+        <li *ngFor="let item of listItems" [ngClass]="{
+                'carouselListItem': true,
+                'carouselSelectedListItem': (item.selectionValue == currentSelection)
+            }"
+            (click)="OnSelection(item.selectionValue)">
+            <ng-container [ngTemplateOutlet] = item.template></ng-container>
+        </li>
+    </ul>
+</section>

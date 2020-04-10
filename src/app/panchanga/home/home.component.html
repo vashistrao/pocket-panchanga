@@ -1,19 +1,10 @@
 <div class="outerLayout">
-    <div class="mainBanner" (click)="bannerClicked(null)">
-        <div class="mainBannerBiggerFont">{{today.date | date: 'd'}}{{' '}}{{today.date | date: 'MMM'}} {{today.date | date: 'yyyy'}}</div>
-        <div><span class="mainBannerFont">{{today.paksha | translator: 'Paksha' }}{{' '}}</span><span>{{'Paksha' | translator }}</span></div>
-        <div><span class="mainBannerFont" *ngFor="let thithi of today.thithi">{{thithi | translator: 'Thithi' }}{{' '}}</span><span>{{'Thithi' | translator }}</span></div>
-        <div><span class="mainBannerFont">{{today.vaasara | translator: 'Vaasara' }}{{' '}}</span><span>{{'Vaasara' | translator }}</span></div>
-        <div><span class="mainBannerFont">{{today.nakshathra | translator: 'Nakshathra' }}{{' '}}</span><span>{{'Nakshathra' | translator }}</span></div>
-    </div>
-    <div class="comingDayBanner">
-        <div class="comingDayHeader">{{'ComingDays' | translator }}</div>
-        <div class="comingDayList">
-            <div class="comingDay" *ngFor="let day of days" (click)="bannerClicked(day.date)">
-                <span>{{day.date | date: 'd'}}{{' '}}{{day.date | date: 'MMM'}}</span><br />
-                <span *ngFor="let thithi of day.thithi">{{thithi | translator: 'Thithi' }}{{' '}}</span><br />
-                <span>{{day.vaasara | translator: 'Vaasara' }}</span>
-            </div>
-        </div>
-    </div>
+    <panchanga-day-summary [day]='selectedDay'></panchanga-day-summary>
+    <panchanga-carousel (selected)="OnSelection($event)">
+        <panchanga-carousel-item *ngFor="let day of days" [selectionValue]="day">
+            <span style="font-weight: bold;">{{day.date | date: 'd'}}{{' '}}{{day.date | date: 'MMM'}}{{' '}}{{day.date | date: 'yyyy'}}</span><br />
+            <span *ngFor="let thithi of day.thithi">{{thithi | translator: 'Thithi' }}{{' '}}</span><span style="font-size: 2vmin;">{{'Thithi' | translator }}</span><br />
+            <span>{{day.vaasara | translator: 'Vaasara' }}{{' '}}</span><span style="font-size: 2vmin;">{{'Vaasara' | translator }}</span>
+        </panchanga-carousel-item>
+    </panchanga-carousel>
 </div>

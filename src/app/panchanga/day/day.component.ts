@@ -9,7 +9,6 @@ import { switchMap, map } from 'rxjs/operators';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router'
 
 @Component({
-  selector: 'panchanga-day',
   templateUrl: './day.component.html',
   styleUrls: ['./day.component.css'],
   providers: [DatePipe]
